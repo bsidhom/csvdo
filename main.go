@@ -14,7 +14,7 @@ func main() {
 
 func realMain() int {
 	if len(os.Args) != 2 {
-		fmt.Fprintln(os.Stderr, "usage: %s <command>\n", os.Args[0])
+		fmt.Fprintf(os.Stderr, "usage: %s <command>\n", os.Args[0])
 		return 2
 	}
 	command := os.Args[1]
